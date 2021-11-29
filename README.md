@@ -91,5 +91,13 @@ mysql> GRANT ALL ON wp_myblog.* TO 'username'@'%';
 mysql> FLUSH PRIVILEGES;
 mysql> EXIT;
 ```
+#### Rename wp-config-sample.php to wp-config.php inside /var/www/html/ directory. Remove the default Apache index page.
+
+`cd /var/www/html/`  
+`sudo mv wp-config-sample.php wp-config.php`  
+`sudo rm -rf index.html'
+
+
+#### Update database information under the MySQL settings section 
 
 
