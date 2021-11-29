@@ -95,9 +95,14 @@ mysql> EXIT;
 
 `cd /var/www/html/`  
 `sudo mv wp-config-sample.php wp-config.php`  
-`sudo rm -rf index.html'
+`sudo rm -rf index.html`
 
 
 #### Update database information under the MySQL settings section 
+![alt text](https://github.com/chathu5002/WP_using_LAMP_stack/blob/main/WordPress-MySQL-Settings.png?raw=true)
 
 
+## Step 6: Restart the web server and mysql service:
+
+`sudo systemctl restart apache2.service`   
+`sudo systemctl restart mysql.service`
