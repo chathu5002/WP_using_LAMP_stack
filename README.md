@@ -117,9 +117,13 @@ mysql> EXIT;
 
 `apachectl -S`
 
+#### AH00111: Config variable ${APACHE_RUN_DIR} is not defined
+
+`source /etc/apache2/envvars`
+
 ## Troubleshooting with ss and ps Utilities
 
-### Check services running on a specific port
+#### Check services running on a specific port
 
 `sudo ss -4 -tlnp | grep 80`
 
@@ -129,6 +133,4 @@ mysql> EXIT;
 - -n ensures that port numbers are displayed, as opposed to protocol names like ‘httporhttps`. This is important since Apache may be attempting to bind to a non-standard port and a service name can be confusing as opposed to the actual port number.
 - -p outputs information about the process that is bound to a port.
 
-#### AH00111: Config variable ${APACHE_RUN_DIR} is not defined
 
-`source /etc/apache2/envvars`
