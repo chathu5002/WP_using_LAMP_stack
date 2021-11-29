@@ -119,6 +119,8 @@ mysql> EXIT;
 
 ## Troubleshooting with ss and ps Utilities
 
+### Check services running on a specific port
+
 `sudo ss -4 -tlnp | grep 80`
 
 - -4 restricts ss to only display IPv4-related socket information.
