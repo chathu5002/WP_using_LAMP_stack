@@ -106,3 +106,27 @@ mysql> EXIT;
 
 `sudo systemctl restart apache2.service`   
 `sudo systemctl restart mysql.service`
+
+# Apache Troubleshooting
+
+#### Find Syntax Errors in Apache Configuration File (/etc/apache2/apache2.conf)
+
+`apachectl -t` or `apachectl configtest`
+
+#### Find Errors in Apache Virtual Host Definitions (error message with the line number in configuration file)
+
+`apachectl -S`
+
+## Troubleshooting with ss and ps Utilities
+
+`sudo ss -4 -tlnp | grep 80`
+
+- -4 restricts ss to only display IPv4-related socket information.
+- -t restricts the output to tcp sockets only.
+- -l displays all listening sockets with the -4 and -t restrictions taken into account.
+- -n ensures that port numbers are displayed, as opposed to protocol names like ‘httporhttps`. This is important since Apache may be attempting to bind to a non-standard port and a service name can be confusing as opposed to the actual port number.
+- -p outputs information about the process that is bound to a port.
+
+
+
+
