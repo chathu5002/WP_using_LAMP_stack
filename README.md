@@ -85,13 +85,13 @@ phpinfo();
 
 `sudo mysql -u root -p`
 
-```
-mysql> CREATE DATABASE wp_myblog;
-mysql> CREATE USER 'username'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
-mysql> GRANT ALL ON wp_myblog.* TO 'username'@'%';
-mysql> FLUSH PRIVILEGES;
-mysql> EXIT;
-```
+`CREATE DATABASE wp_myblog;`  
+`CREATE USER 'username'@'%' IDENTIFIED WITH mysql_native_password BY 'password';`  (MySQL)  
+`CREATE USER db_user IDENTIFIED BY '1234';` (MariaDB)  
+`GRANT ALL ON wp_myblog.* TO 'username'@'%';`  
+`FLUSH PRIVILEGES;`  
+`EXIT;`
+
 #### Rename wp-config-sample.php to wp-config.php inside /var/www/html/ directory. Remove the default Apache index page.
 
 `cd /var/www/html/`  
