@@ -89,7 +89,7 @@ phpinfo();
 `CREATE USER 'username'@'%' IDENTIFIED WITH mysql_native_password BY 'password';`  (MySQL)  
 `CREATE USER username IDENTIFIED BY '1234';`  (MariaDB)  
 `GRANT ALL ON wp_myblog.* TO 'username'@'%';`  (MySQL)  
-`GRANT ALL PRIVILEGES ON *.* TO 'database_name'@'%' ;`  (MariaDB)  
+`GRANT ALL PRIVILEGES ON *.* TO 'username'@'%' ;`  (MariaDB)  
 `FLUSH PRIVILEGES;`  
 `EXIT;`
 
