@@ -1,4 +1,4 @@
-# Install WordPress on Ubuntu using LAMP stack
+# Install Apache and WordPress on Ubuntu using LAMP stack
 https://www.tecmint.com/install-wordpress-in-ubuntu-lamp-stack/
 
 ## Step 1: Install Apache Web Server on Ubuntu
